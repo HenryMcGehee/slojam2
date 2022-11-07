@@ -34,54 +34,54 @@ public class FPSController : MonoBehaviour
 
     void Update()
     {
-        // We are grounded, so recalculate move direction based on axes
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        Vector3 right = transform.TransformDirection(Vector3.right);
-        // Press Left Shift to run
-        // float run = Input.GetAxis("Sprint");
-
-        // if (run < 0 || Input.GetButton("Sprint2"))
-        // {
-        //     isRunning = true;
-        //     if (characterController.velocity.magnitude > 1)
-        //     {
-        //         playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, 80, 2 * Time.deltaTime);
-        //     }
-        // }
-        // else
-        // {
-        //     isRunning = false;
-        //     playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, 71, 5 * Time.deltaTime);
-        // }
-
-        float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
-        float movementDirectionY = moveDirection.y;
-        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-
-        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
-        {
-            moveDirection.y = jumpSpeed;
-        }
-        else
-        {
-            moveDirection.y = movementDirectionY;
-        }
-
-        // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
-        // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
-        // as an acceleration (ms^-2)
-        if (!characterController.isGrounded)
-        {
-            moveDirection.y -= gravity * Time.deltaTime;
-        }
-
-        // Move the controller
-        characterController.Move(moveDirection * Time.deltaTime);
-
-        // Player and Camera rotation
         if (canMove)
         {
+            // We are grounded, so recalculate move direction based on axes
+            Vector3 forward = transform.TransformDirection(Vector3.forward);
+            Vector3 right = transform.TransformDirection(Vector3.right);
+            // Press Left Shift to run
+            // float run = Input.GetAxis("Sprint");
+
+            // if (run < 0 || Input.GetButton("Sprint2"))
+            // {
+            //     isRunning = true;
+            //     if (characterController.velocity.magnitude > 1)
+            //     {
+            //         playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, 80, 2 * Time.deltaTime);
+            //     }
+            // }
+            // else
+            // {
+            //     isRunning = false;
+            //     playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, 71, 5 * Time.deltaTime);
+            // }
+
+            float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
+            float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
+            float movementDirectionY = moveDirection.y;
+            moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+
+            if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
+            {
+                moveDirection.y = jumpSpeed;
+            }
+            else
+            {
+                moveDirection.y = movementDirectionY;
+            }
+
+            // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
+            // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
+            // as an acceleration (ms^-2)
+            if (!characterController.isGrounded)
+            {
+                moveDirection.y -= gravity * Time.deltaTime;
+            }
+
+            // Move the controller
+            characterController.Move(moveDirection * Time.deltaTime);
+
+        // Player and Camera rotation
             int invert = 1;
 
             if(invertYAxis) {

@@ -13,6 +13,9 @@ public class PlayerRayCast : MonoBehaviour
     public GameObject targetObj;
     RaycastHit whatIHit;
     public GameObject useReticle;
+    public Transform defaultPos;
+    public Vector3 TargetPos;
+    public float inspectSpeed;
 
     void Start()
     {
@@ -49,6 +52,8 @@ public class PlayerRayCast : MonoBehaviour
                         //target = whatIHit.transform.position;
                         targetObj.SendMessage("Interact");
                         SetTalking();
+                        TargetPos = new Vector3(targetObj.transform.GetChild(1).position.x, targetObj.transform.GetChild(1).position.y, targetObj.transform.GetChild(1).position.z);
+                        transform.position = TargetPos;
                         playerMove.canMove = false;
                     }
                     else if (whatIHit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
@@ -64,7 +69,11 @@ public class PlayerRayCast : MonoBehaviour
             Talk();
             if(target != new Vector3(0,0,0)){
                 LookAt(target);
+                // Vector3.Lerp(defaultPos.position, TargetPos, inspectSpeed * Time.deltaTime);
             }
+        }
+        else{
+            transform.position = defaultPos.position;
         }
     }
 
