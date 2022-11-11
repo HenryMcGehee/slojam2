@@ -35,7 +35,6 @@ public class Readable : MonoBehaviour
         {
             if(pages[i] != "")
             {
-                Debug.Log(pages[i]);
                 pages2.Add(pages[i]);
             }
         }
