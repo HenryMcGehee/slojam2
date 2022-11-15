@@ -16,6 +16,9 @@ public class CameraLookAt : MonoBehaviour
     {
         LookAt(target.position);
     }
+    public void ChangeTarget(Transform t){
+        target = t;
+    }
     void LookAt(Vector3 t)
     {
         Vector3 direction = (t - transform.position).normalized;

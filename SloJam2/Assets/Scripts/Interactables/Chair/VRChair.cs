@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class VRChair : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class VRChair : MonoBehaviour
     public float powerRequirement;
     public float animLength;
     bool playerInteracting;
+    public Flowchart chart;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,5 +56,13 @@ public class VRChair : MonoBehaviour
         yield return new WaitForSeconds(animLength);
         Debug.Log("losdifh");
         cameraM.SwitchToVR();
+    }
+    public void PlayerInteracting(){
+        playerInteracting = true;
+    }
+    public void ComputerGreet(string s)
+    {
+        anim.Play("ScreenPullOut");
+        chart.ExecuteBlock(s);
     }
 }

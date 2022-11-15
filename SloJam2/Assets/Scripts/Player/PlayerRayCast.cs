@@ -16,6 +16,7 @@ public class PlayerRayCast : MonoBehaviour
     public Transform defaultPos;
     public Vector3 TargetPos;
     public float inspectSpeed;
+    public GameObject vrChair;
 
     void Start()
     {
@@ -77,6 +78,10 @@ public class PlayerRayCast : MonoBehaviour
         }
     }
 
+    public void StartInVRWorld(){
+        StartCoroutine("delaySpawn");
+    }
+
     void LookAt(Vector3 target)
     {
         Vector3 direction = (target - transform.position).normalized;
@@ -116,5 +121,15 @@ public class PlayerRayCast : MonoBehaviour
     IEnumerator delayTalkReset(){
         yield return new WaitForSeconds(0.5f);
         talking = false;
+    }
+
+    IEnumerator delaySpawn(){
+        yield return new WaitForSeconds(.5f);
+        targetObj = vrChair;
+        // targetObj.SendMessage("Interact");
+        SetTalking();
+        TargetPos = new Vector3(targetObj.transform.GetChild(1).position.x, targetObj.transform.GetChild(1).position.y, targetObj.transform.GetChild(1).position.z);
+        transform.position = TargetPos;
+        playerMove.canMove = false;
     }
 }

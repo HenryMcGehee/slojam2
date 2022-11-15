@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Progression")]
+    public bool startFromBeginning;
+    public CameraManager cameraManager;
+    public Flowchart gfChart;
+    public PlayerRayCast player;
     // vars for chair screen anim
     [Header("Chair Screen Anim")]
     public LevelDiagnostics levelDiagnostics;
@@ -12,6 +18,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(startFromBeginning)
+        {
+            player.StartInVRWorld();
+            gfChart.ExecuteBlock("Conversation 1");
+        }
         
     }
 
@@ -26,5 +37,13 @@ public class GameManager : MonoBehaviour
         else{
             chairScreenAnim.SetBool("CanUse", false);
         }
+
+
+        // if(Input.GetKeyDown(KeyCode.K))
+        // {
+        //     Cursor.visible = true;
+        //     Cursor.lockState = CursorLockMode.None;
+        // }
     }
+
 }
