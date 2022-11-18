@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         {
             player.StartInVRWorld();
             chart.ExecuteBlock("1");
+            levelDiagnostics.power = 500;
         }
         
     }

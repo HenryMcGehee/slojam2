@@ -12,6 +12,7 @@ public class VRChair : MonoBehaviour
     public FadeToTransparent fade;
     public CameraManager cameraM;
     public float powerRequirement;
+    public bool chairReady;
     public float animLength;
     bool playerInteracting;
     public Flowchart chart;
@@ -27,7 +28,7 @@ public class VRChair : MonoBehaviour
     {
         if(playerInteracting)
         {
-            if(Input.GetButtonDown("Cancel")){
+            if(Input.GetButtonDown("Fire1")){
                 //eventSystem.GetComponent<StandaloneInputModule>().DeactivateModule();
                 player.ReturnMovement();
                 playerInteracting = false;
@@ -38,15 +39,23 @@ public class VRChair : MonoBehaviour
     {
         if(levelDiagnostics.power > powerRequirement)
         {
-            screenAnim.Play("ScreenToVRWorld");
-            levelDiagnostics.power -= powerRequirement;
-            // play animation
-            anim.SetTrigger("PullIn");
-            // reference camera switcher
-            StartCoroutine("SwitchCams");
-            // do ui shit
-            fade.Fade();
-            // sound shit
+            if(chairReady)
+            {
+                screenAnim.Play("ScreenToVRWorld");
+                levelDiagnostics.power -= powerRequirement;
+                // play animation
+                anim.SetTrigger("PullIn");
+                // reference camera switcher
+                StartCoroutine("SwitchCams");
+                // do ui shit
+                fade.Fade();
+                // sound shit
+            }
+            else{
+                playerInteracting = true;
+                chart.ExecuteBlock("NotReady");
+                Debug.Log("Not ready for next story");
+            }
         }
         else{
             playerInteracting = true;
