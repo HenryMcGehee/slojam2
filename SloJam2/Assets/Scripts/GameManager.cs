@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     [Header("Progression")]
     public bool startFromBeginning;
     public CameraManager cameraManager;
-    public Flowchart gfChart;
+    public Flowchart chart;
+    public int convoIndex;
     public PlayerRayCast player;
     // vars for chair screen anim
     [Header("Chair Screen Anim")]
@@ -21,9 +22,17 @@ public class GameManager : MonoBehaviour
         if(startFromBeginning)
         {
             player.StartInVRWorld();
-            gfChart.ExecuteBlock("Conversation 1");
+            chart.ExecuteBlock("1");
         }
         
+    }
+    public void PlayConvo()
+    {
+        chart.ExecuteBlock(convoIndex.ToString());
+    }
+    public void setConvoIndex(int i)
+    {
+        convoIndex = i;
     }
 
     // Update is called once per frame

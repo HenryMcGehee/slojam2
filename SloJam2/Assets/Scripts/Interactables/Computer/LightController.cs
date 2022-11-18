@@ -7,34 +7,34 @@ public class LightController : MonoBehaviour
 {
     public LevelDiagnostics levelDiagnostics;
     public float powerCost;
-    public List<GameObject> lights;
+    public GameObject lights;
     public bool lightStatus = true;
     public Color on;
     public Color off;
-    public void ToggleLight(int i)
+    public void ToggleLight()
     {
         if(!lightStatus){
-            TurnOnLight(i);
+            TurnOnLight();
             var colors = GetComponent<Button>().colors;
             colors.normalColor = on;
             GetComponent<Button>().colors = colors;
         }
         else{
-            TurnOffLight(i);
+            TurnOffLight();
             var colors = GetComponent<Button>().colors;
             colors.normalColor = off;
             GetComponent<Button>().colors = colors;
         }
     }
-    void TurnOnLight(int lightIndex){
+    void TurnOnLight(){
         Debug.Log("ripperrooo");
-        lights[lightIndex].SetActive(true);
+        lights.SetActive(true);
         lightStatus = true;
         levelDiagnostics.power -= powerCost;
     }
-    void TurnOffLight(int lightIndex){
+    void TurnOffLight(){
         Debug.Log("ripper");
-        lights[lightIndex].SetActive(false);
+        lights.SetActive(false);
         lightStatus = false;
         levelDiagnostics.power += powerCost;
     }

@@ -9,11 +9,13 @@ public class VRChair : MonoBehaviour
     public LevelDiagnostics levelDiagnostics;
     public Animator anim;
     public Animator screenAnim;
+    public FadeToTransparent fade;
     public CameraManager cameraM;
     public float powerRequirement;
     public float animLength;
     bool playerInteracting;
     public Flowchart chart;
+    public GameManager manager;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class VRChair : MonoBehaviour
             // reference camera switcher
             StartCoroutine("SwitchCams");
             // do ui shit
+            fade.Fade();
             // sound shit
         }
         else{
@@ -56,6 +59,7 @@ public class VRChair : MonoBehaviour
         yield return new WaitForSeconds(animLength);
         Debug.Log("losdifh");
         cameraM.SwitchToVR();
+        manager.PlayConvo();
     }
     public void PlayerInteracting(){
         playerInteracting = true;
