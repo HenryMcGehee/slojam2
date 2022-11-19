@@ -73,6 +73,12 @@ public class VRChair : MonoBehaviour
     public void PlayerInteracting(){
         playerInteracting = true;
     }
+    public void ObjectiveComplete(){
+        chairReady = true;
+    }
+    public void ObjectiveNotDone(){
+        chairReady = false;
+    }
     public void ComputerGreet(string s)
     {
         anim.Play("ScreenPullOut");

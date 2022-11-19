@@ -5,8 +5,23 @@ using UnityEngine;
 public class Fountain : MonoBehaviour
 {
     public Bed sleepManager;
+    public bool ration;
+    public bool on;
     public void Interact(){
-        // play sound 
-        sleepManager.drank = true;
+        if(on)
+        {
+            if(!ration)
+            {
+                // play sound
+                ration = true;
+                sleepManager.drank = true;
+            }
+            else{
+                // wrong sound
+            }
+        }
+        else{
+            //wrong sound
+        }
     }
 }

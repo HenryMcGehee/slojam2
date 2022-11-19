@@ -12,7 +12,7 @@ public class Bed : MonoBehaviour
     public LevelDiagnostics levelDiagnostics;
     public bool ate;
     public bool drank;
-    public bool canSleep;
+    public bool objectiveComplete;
     public string wakeUpBlock;
     bool playerInteracting;
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class Bed : MonoBehaviour
 
     public void Interact()
     {
-        if(canSleep)
+        if(objectiveComplete)
         {
             if(ate && drank){
                 // do ui shit
@@ -54,12 +54,24 @@ public class Bed : MonoBehaviour
         else{
             playerInteracting = true;
             Debug.Log("got stuff to do");
-            chart.ExecuteBlock("CantSleep");
+            chart.ExecuteBlock("ObjectiveNotComplete");
             // sound shit
         }
     }
     public void PlayerInteracting(){
         playerInteracting = true;
+    }
+    public void ObjectiveComplete(){
+        objectiveComplete = true;
+    }
+    public void ObjectiveNotDone(){
+        objectiveComplete = false;
+    }
+    public void ResetDay(){
+        objectiveComplete = false;
+        ate = false;
+        drank = false;
+        manager.ResetDrinkEat();
     }
     public void SetWakeUpBlock(string s){
         wakeUpBlock = s;

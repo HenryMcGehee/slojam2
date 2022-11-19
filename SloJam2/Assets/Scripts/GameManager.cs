@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     [Header("Chair Screen Anim")]
     public LevelDiagnostics levelDiagnostics;
     public VRChair chair;
+    public NutrientDispenser nutrientDispenser;
+    public Fountain fountain;
     public Animator chairScreenAnim;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,10 @@ public class GameManager : MonoBehaviour
             levelDiagnostics.power = 500;
         }
         
+    }
+    public void SetPower(float p)
+    {
+        levelDiagnostics.power = p;
     }
     public void PlayConvo()
     {
@@ -56,4 +62,9 @@ public class GameManager : MonoBehaviour
         // }
     }
 
+    public void ResetDrinkEat()
+    {
+        nutrientDispenser.ration = false;
+        fountain.ration = false;
+    }
 }

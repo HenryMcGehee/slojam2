@@ -3,23 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LightController : MonoBehaviour
+public class LightingController : MonoBehaviour
 {
     public LevelDiagnostics levelDiagnostics;
     public float powerCost;
-    public GameObject lights;
-    public bool lightStatus;
-    public bool lightOffOnStart;
+    public GameObject lightIndicator;
+    public bool lightStatus = true;
     public Color on;
     public Color off;
-    void Start()
-    {
-        if(lightOffOnStart)
-        {
-            TurnOffLight();
-        }
-    }
-    public void ToggleLight()
+    public Text text;
+    public void Togglelight()
     {
         if(!lightStatus){
             TurnOnLight();
@@ -29,23 +22,25 @@ public class LightController : MonoBehaviour
         }
     }
     void TurnOnLight(){
-        Debug.Log("ripperrooo");
-        lights.SetActive(true);
+        Debug.Log("light on");
+        lightIndicator.SetActive(true);
         lightStatus = true;
         levelDiagnostics.power -= powerCost;
 
         var colors = GetComponent<Button>().colors;
         colors.normalColor = on;
         GetComponent<Button>().colors = colors;
+        text.text = "Turn Off";
     }
     void TurnOffLight(){
-        Debug.Log("ripper");
-        lights.SetActive(false);
+        Debug.Log("light off");
+        lightIndicator.SetActive(false);
         lightStatus = false;
         levelDiagnostics.power += powerCost;
 
         var colors = GetComponent<Button>().colors;
         colors.normalColor = off;
         GetComponent<Button>().colors = colors;
+        text.text = "Turn On";
     }
 }
