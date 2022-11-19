@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Readable
   - UseReticle
+  - SleepManager
   layers:
   - Default
   - TransparentFX
