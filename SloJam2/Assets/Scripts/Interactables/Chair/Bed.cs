@@ -13,6 +13,7 @@ public class Bed : MonoBehaviour
     public bool ate;
     public bool drank;
     public bool canSleep;
+    public string wakeUpBlock;
     bool playerInteracting;
     // Start is called before the first frame update
     void Start()
@@ -57,11 +58,17 @@ public class Bed : MonoBehaviour
             // sound shit
         }
     }
+    public void PlayerInteracting(){
+        playerInteracting = true;
+    }
+    public void SetWakeUpBlock(string s){
+        wakeUpBlock = s;
+    }
 
     IEnumerator Sleep()
     {
         yield return new WaitForSeconds(5f);
         fade.Fade();
-        chart.ExecuteBlock("Computer3");
+        chart.ExecuteBlock(wakeUpBlock);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class NutrientDispenser : MonoBehaviour
 {
     public Bed sleepManager;
+    public Animator anim;
     public bool ration;
     public Transform spawn;
     public GameObject food;
@@ -14,6 +15,7 @@ public class NutrientDispenser : MonoBehaviour
         {
             // spawn
             Instantiate(food, spawn.position, Quaternion.identity, spawn);
+            anim.SetTrigger("Eat");
             ration = true;
         }
         else{
