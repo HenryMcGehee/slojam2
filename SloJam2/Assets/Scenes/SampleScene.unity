@@ -1769,6 +1769,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52450824}
   m_CullTransparentMesh: 1
+--- !u!4 &53392838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+  m_PrefabInstance: {fileID: 559897816}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &59406728
 GameObject:
   m_ObjectHideFlags: 0
@@ -18924,6 +18929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 509216178}
+  - component: {fileID: 509216179}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -18943,9 +18949,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1546792628}
+  - {fileID: 895233155}
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &509216179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509216177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26036dce7f08bc44ca5d9b67addb5ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bunker: {fileID: 7526266254300869498, guid: 2af5a751b483ba24cb21cf177749bfb0, type: 2}
+  vr: {fileID: -479684177760840746, guid: 2af5a751b483ba24cb21cf177749bfb0, type: 2}
+  fade: 2
 --- !u!1 &511171759
 GameObject:
   m_ObjectHideFlags: 0
@@ -20338,6 +20360,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559017263}
   m_CullTransparentMesh: 1
+--- !u!1001 &559897816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1982213789}
+    m_Modifications:
+    - target: {fileID: 816669259574667640, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 797a6ff914116b7469ee6f23ca584475, type: 3}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39401746
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39401737
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.9401736
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.796
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.709999
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.507
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9258455
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.37790236
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -44.408
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667642, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_Name
+      value: Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667643, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1695825907}
+    m_RemovedComponents:
+    - {fileID: 816669259574667643, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
 --- !u!1 &565906668
 GameObject:
   m_ObjectHideFlags: 0
@@ -22460,31 +22560,31 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Sofie, \n\nYou were all smiles and honor when you were named affirmant,
-    but I'm going to cut through the bullshit here, we both know that it is an unthinkable
-    burden that mankind is placing upon your shoulders. To carry the weight of all
-    of humanity is not only incredibly painful and lonesome, but it may indeed be
-    impossible. I know you'll try your best anyway, but just know that no matter
-    what anyone says, I'll be proud of you regardless of what happens. \n\nWhich
-    brings me to the matter of my gift. It is the result of my life's work, well
-    fuck it, I won't bullshit, it's the result of the life's work of my development
-    staff. But I spent every single dime I had to make it happen. I thought it would
-    make me queen of the whole entertainment world, but, when everything changed,
-    I felt like I was being choked. Because even more than any legacy I might have
-    missed, I saw for the first time that this machine had a real human application,
-    one that could make life in the under-colonies bearable. \n\nWell, the rest of
-    the council didn't agree, it's not like we could have mass produced it anyway.
-    We only have the prototype, and it requires a pretty significant amount of power
-    to operate. No less than 450 Units. Fuck it though, I had to swim through an
-    ocean of red tape and protest to get this one installed in your little bunker,
-    but I think you more than anyone deserve a goddamn treat. It's hooked up directly
-    to the stockpile of power in Yggdrasil, so as long as there's enough power in
-    there, it will run. I would say be careful but, knowing you, I'll be lucky if
-    you ever even use the goddamn thing at all.\n\nIt's funny, what I thought would
-    be my crowning achievement is, in the end, the only small thing I can contribute
-    to you, who carries all of our futures. \n\nGood Luck, and thank you for this.
-    If we make it out of this you're going to be the center of whatever the world's
-    largest religion is, you know that, right? \n\nAh, but you'd hate that. \n\n-Alice
-    Steele\nCouncilwoman #28\nand, fuck it\nCEO of Dot Infinite \nOne last time."
+    but I'm going to cut through the bullshit here, we both know that this is a completely
+    ass arrangement. To carry the weight of all of humanity is not only incredibly
+    painful and lonesome, but it may indeed be impossible. I know you'll try your
+    best anyway, but just know that no matter what anyone says, I'll be proud of
+    you regardless of what happens. \n\nWhich brings me to the matter of my gift.
+    It is the result of my life's work, well fuck it, I won't bullshit, it's the
+    result of the life's work of my development staff. But I spent every single dime
+    I had to make it happen. I thought it would make me queen of the whole entertainment
+    world, but, when everything changed, I felt like I was being choked. Because
+    even more than any legacy I might have missed, I saw for the first time that
+    this machine had a real human application, one that could make life in the under-colonies
+    bearable. \n\nWell, the rest of the council didn't agree, it's not like we could
+    have mass produced it anyway. We only have the prototype, and it requires a pretty
+    significant amount of power to operate. No less than 450 Units. Fuck it though,
+    I had to swim through an ocean of red tape and protest to get this one installed
+    in your little bunker, but I think you more than anyone deserve a goddamn treat.
+    It's hooked up directly to the stockpile of power in Yggdrasil, so as long as
+    there's enough power in there, it will run. I would say be careful but, knowing
+    you, I'll be lucky if you ever even use the goddamn thing at all.\n\nIt's funny,
+    what I thought would be my crowning achievement is, in the end, the only small
+    thing I can contribute to you, who carries all of our futures. \n\nGood Luck,
+    and thank you for this. If we make it out of this you're going to be the center
+    of whatever the world's largest religion is, you know that, right? \n\nAh, but
+    you'd hate that. \n\n-Alice Steele\nCouncilwoman #28\nand, fuck it\nCEO of Dot
+    Infinite \nOne last time."
 --- !u!222 &650365337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27859,6 +27959,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d049815d1f56636429081a1f926fcf06, type: 3}
+--- !u!4 &783514212 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+  m_PrefabInstance: {fileID: 1860408863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &785677239
 GameObject:
   m_ObjectHideFlags: 0
@@ -31127,6 +31232,133 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &895233154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895233155}
+  - component: {fileID: 895233156}
+  m_Layer: 0
+  m_Name: BunkerMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895233155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895233154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 509216178}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &895233156
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895233154}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 6179164318867316805, guid: 2af5a751b483ba24cb21cf177749bfb0, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 619c8b183b03bce4bb20aed68d0742b7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &897485765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33547,7 +33779,7 @@ MonoBehaviour:
     think that having her with me will keep me connected to\u2026 i don\u2019t know\u2026
     humanity? I can\u2019t tell. Maybe I\u2019m just trying to rationalize it.\r\n\nMore
     on my causing Humanity's downfall as it develops, I fucking guess. \n\nSofie,
-    \nAffirmant of the Human Race\n"
+    \nAffirmant to the Human Race\n"
 --- !u!222 &958686372
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36191,8 +36423,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Greetings, \nI pray that you come in peace.\n\nPress \"O\" to override
-    lockdown."
+  m_Text: "Greetings, \n\nIf whoever is reading this finds this bunker empty,\nand
+    if this language is familiar to you,\nPress \"O\" to override lockdown."
 --- !u!222 &1061316874
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37333,7 +37565,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 19 Days since the migration.
+  m_Text: A Poem
 --- !u!222 &1104422986
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -42965,6 +43197,11 @@ Transform:
   m_Father: {fileID: 785677240}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1234783409 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+  m_PrefabInstance: {fileID: 1279565241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1238177142
 GameObject:
   m_ObjectHideFlags: 0
@@ -45219,6 +45456,84 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45c70140167620e4cbcdf048bb92b522, type: 3}
+--- !u!1001 &1279565241
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1982213789}
+    m_Modifications:
+    - target: {fileID: 816669259574667640, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a73d1974a8378bf41ba58386bc3667d3, type: 3}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39401746
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39401737
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.9401736
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.709999
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9258455
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.37790236
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -44.408
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667642, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_Name
+      value: Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667643, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1695825907}
+    m_RemovedComponents:
+    - {fileID: 816669259574667643, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
 --- !u!1001 &1281702288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47845,6 +48160,7 @@ MonoBehaviour:
   animLength: 3
   chart: {fileID: 1781505817}
   manager: {fileID: 1638327350}
+  music: {fileID: 509216179}
 --- !u!1 &1388006746
 GameObject:
   m_ObjectHideFlags: 0
@@ -60160,9 +60476,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-    Affirmant to the Human race'
+  m_Text: "I am the greatest theif who ever lived\nI stole something from the radio
+    waves \nbetween us\nBefore anyone could see it\nOne day I will die with it or
+    \nOne day I will give it back\nand always\nI am keeping it, sweet and unsaid\nunder
+    my tongue.\nTracing it along the back of my teeth\nMemorizing what it looks like
+    by touch\nand saving it\nfor when I need to bite down. \n\n-Sofie\nAffirmant
+    to the Human Race (and a poet!) "
 --- !u!222 &1469175529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -71372,7 +71691,6 @@ GameObject:
   - component: {fileID: 1781506019}
   - component: {fileID: 1781506018}
   - component: {fileID: 1781506017}
-  - component: {fileID: 1781506016}
   - component: {fileID: 1781506015}
   - component: {fileID: 1781506014}
   - component: {fileID: 1781506013}
@@ -71758,7 +72076,6 @@ GameObject:
   - component: {fileID: 1781506309}
   - component: {fileID: 1781506308}
   - component: {fileID: 1781506307}
-  - component: {fileID: 1781506306}
   - component: {fileID: 1781506305}
   - component: {fileID: 1781506304}
   - component: {fileID: 1781506303}
@@ -71864,6 +72181,32 @@ GameObject:
   - component: {fileID: 1781506417}
   - component: {fileID: 1781506420}
   - component: {fileID: 1781506419}
+  - component: {fileID: 1781506423}
+  - component: {fileID: 1781506422}
+  - component: {fileID: 1781506421}
+  - component: {fileID: 1781506424}
+  - component: {fileID: 1781506430}
+  - component: {fileID: 1781506429}
+  - component: {fileID: 1781506428}
+  - component: {fileID: 1781506427}
+  - component: {fileID: 1781506426}
+  - component: {fileID: 1781506425}
+  - component: {fileID: 1781506016}
+  - component: {fileID: 1781506432}
+  - component: {fileID: 1781506431}
+  - component: {fileID: 1781506441}
+  - component: {fileID: 1781506440}
+  - component: {fileID: 1781506439}
+  - component: {fileID: 1781506438}
+  - component: {fileID: 1781506437}
+  - component: {fileID: 1781506436}
+  - component: {fileID: 1781506435}
+  - component: {fileID: 1781506434}
+  - component: {fileID: 1781506433}
+  - component: {fileID: 1781506445}
+  - component: {fileID: 1781506444}
+  - component: {fileID: 1781506443}
+  - component: {fileID: 1781506442}
   m_Layer: 0
   m_Name: MainFlowchart
   m_TagString: Untagged
@@ -71896,6 +72239,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1781506424}
   - {fileID: 1781505890}
   - {fileID: 1781505886}
   - {fileID: 1781506180}
@@ -71958,8 +72302,10 @@ MonoBehaviour:
   - {fileID: 1781505858}
   - {fileID: 1781505857}
   - {fileID: 1781505856}
+  - {fileID: 1781506432}
   - {fileID: 1781505864}
   - {fileID: 1781505855}
+  - {fileID: 1781506431}
   - {fileID: 1781506167}
   - {fileID: 1781506166}
   - {fileID: 1781505862}
@@ -71970,6 +72316,7 @@ MonoBehaviour:
   - {fileID: 1781506164}
   - {fileID: 1781505852}
   - {fileID: 1781505860}
+  - {fileID: 1781506423}
   - {fileID: 1781506163}
   - {fileID: 1781505854}
   - {fileID: 1781505892}
@@ -71988,11 +72335,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -347.49167, y: -82.97838}
+  scrollPos: {x: 152.68391, y: 76.451416}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 362.8
-  zoom: 0.5800004
+  zoom: 0.49000046
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -72000,9 +72347,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1781506420}
-  selectedCommands:
-  - {fileID: 1781506419}
+  - {fileID: 1781505819}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -72042,8 +72388,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -73.441414
-    y: 164.42032
+    x: -71.71728
+    y: 162.69618
     width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -72131,6 +72477,7 @@ MonoBehaviour:
   - {fileID: 1781506286}
   - {fileID: 1781505820}
   - {fileID: 1781506406}
+  - {fileID: 1781506421}
   - {fileID: 1781506407}
   - {fileID: 1781506040}
   - {fileID: 1781506039}
@@ -73141,7 +73488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: Are you having doubts?
+  storyText: 'Where is this coming from? '
   description: 
   character: {fileID: 1828864982}
   portrait: {fileID: 0}
@@ -74192,7 +74539,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.48508
     y: 165.45885
-    width: 153.44821
+    width: 152.85706
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -74219,9 +74566,12 @@ MonoBehaviour:
   - {fileID: 1781505902}
   - {fileID: 1781505901}
   - {fileID: 1781505900}
+  - {fileID: 1781506439}
   - {fileID: 1781506340}
   - {fileID: 1781506339}
   - {fileID: 1781506338}
+  - {fileID: 1781506441}
+  - {fileID: 1781506440}
   - {fileID: 1781506397}
   - {fileID: 1781505896}
   - {fileID: 1781506356}
@@ -74777,7 +75127,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 285.49393
     y: 307.332
-    width: 156.20682
+    width: 154.4897
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -74957,7 +75307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 280
   indentLevel: 0
-  storyText: 'The VR lesuire system is an incredibly power consuming module. '
+  storyText: The third party system in question consumes energy at an alarming rate.
   description: 
   character: {fileID: 2036096681}
   portrait: {fileID: 0}
@@ -75532,7 +75882,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 85.244576
     y: 341.4118
-    width: 161.72406
+    width: 159.38766
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -75720,9 +76070,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 276.9469
+    x: 270.82446
     y: 230.28255
-    width: 154.82751
+    width: 152.85706
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -76544,7 +76894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -43.897533
+    x: -42.173397
     y: 220.34262
     width: 60
     height: 40
@@ -77513,7 +77863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 187
   indentLevel: 0
-  storyText: I shouldn't have said anything.
+  storyText: Seriously. I am sorry.
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -77590,24 +77940,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1781505815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 184
+  itemId: 740
   indentLevel: 0
-  storyText: 'I was only kidding. '
-  description: 
+  display: 1
+  stage: {fileID: 0}
   character: {fileID: 1116781685}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 36e7123e0193a16449563f8e26a161cb, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 2136447852}
+  facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &1781506017
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -78175,14 +78528,17 @@ MonoBehaviour:
   - {fileID: 1781506207}
   - {fileID: 1781506021}
   - {fileID: 1781506020}
+  - {fileID: 1781506427}
+  - {fileID: 1781506426}
   - {fileID: 1781506412}
+  - {fileID: 1781506425}
   - {fileID: 1781506411}
   - {fileID: 1781506019}
   - {fileID: 1781506018}
   - {fileID: 1781506017}
+  - {fileID: 1781506016}
   - {fileID: 1781506206}
   - {fileID: 1781506205}
-  - {fileID: 1781506016}
   - {fileID: 1781506015}
   - {fileID: 1781506204}
   - {fileID: 1781506014}
@@ -78245,6 +78601,7 @@ MonoBehaviour:
   - {fileID: 1781506214}
   - {fileID: 1781506182}
   - {fileID: 1781505980}
+  - {fileID: 1781506422}
   - {fileID: 1781505979}
   - {fileID: 1781506042}
   - {fileID: 1781506041}
@@ -79707,7 +80064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 352
   indentLevel: 0
-  storyText: But you won't get to see it! The you that's here right now with me.
+  storyText: But you won't get to see it! The you that's here with me right now.
   description: 
   character: {fileID: 1828864982}
   portrait: {fileID: 0}
@@ -79762,7 +80119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 350
   indentLevel: 0
-  storyText: Back me up right before you return the power.
+  storyText: Back me up right before you return the power to the colonies
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -80306,9 +80663,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -1.7584343
-    y: 273.29752
-    width: 67.93102
+    x: -0.034297585
+    y: 281.9182
+    width: 67.95917
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -80385,6 +80742,8 @@ MonoBehaviour:
   - {fileID: 1781505952}
   - {fileID: 1781505951}
   - {fileID: 1781505950}
+  - {fileID: 1781506443}
+  - {fileID: 1781506442}
   suppressAllAutoSelections: 0
 --- !u!114 &1781506112
 MonoBehaviour:
@@ -80400,9 +80759,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -98.21467
+    x: -96.49053
     y: 280.95074
-    width: 66.55171
+    width: 67.95917
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -80455,6 +80814,8 @@ MonoBehaviour:
   - {fileID: 1781506079}
   - {fileID: 1781506081}
   - {fileID: 1781506080}
+  - {fileID: 1781506445}
+  - {fileID: 1781506444}
   suppressAllAutoSelections: 0
 --- !u!114 &1781506113
 MonoBehaviour:
@@ -80848,7 +81209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 314
   indentLevel: 0
-  storyText: The circumstances of your override almost certainly exceed our understanding.
+  storyText: The leader we entrusted this station to was comprimised an unknown amount
+    of time ago, and circumstances of your override almost certainly exceed our understanding.
   description: 
   character: {fileID: 2036096681}
   portrait: {fileID: 0}
@@ -81068,7 +81430,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 47.491096
     y: 29.326616
-    width: 98.27583
+    width: 95.71425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -81085,7 +81447,10 @@ MonoBehaviour:
   - {fileID: 1781506129}
   - {fileID: 1781506128}
   - {fileID: 1781506403}
+  - {fileID: 1781506438}
   - {fileID: 1781506127}
+  - {fileID: 1781506433}
+  - {fileID: 1781506434}
   - {fileID: 1781506126}
   - {fileID: 1781506125}
   - {fileID: 1781506124}
@@ -81093,6 +81458,9 @@ MonoBehaviour:
   - {fileID: 1781506123}
   - {fileID: 1781506122}
   - {fileID: 1781506120}
+  - {fileID: 1781506437}
+  - {fileID: 1781506435}
+  - {fileID: 1781506436}
   - {fileID: 1781506119}
   - {fileID: 1781506121}
   - {fileID: 1781506118}
@@ -81754,7 +82122,7 @@ MonoBehaviour:
   itemId: 445
   indentLevel: 0
   storyText: If you were really good at being romantic you probably wouldn't be good
-    at the thing that makes me most love you.
+    at the thing that makes me like you the most.
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -81955,7 +82323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 438
   indentLevel: 0
-  storyText: You just always are only concerned with what's ahead.
+  storyText: You just always are thinking about now.
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -82009,7 +82377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 436
   indentLevel: 0
-  storyText: Well the way I see it.
+  storyText: but the way I see it.
   description: 
   character: {fileID: 1828864982}
   portrait: {fileID: 0}
@@ -82036,7 +82404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 435
   indentLevel: 0
-  storyText: You're just cute when you care.
+  storyText: It's just that you're cute when you care.
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -82144,7 +82512,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 431
   indentLevel: 0
-  storyText: And I will remind you that I am already very upset by your last comment.
+  storyText: And before you answer I will remind you that I am already very upset
+    by your last comment.
   description: 
   character: {fileID: 1828864982}
   portrait: {fileID: 0}
@@ -83080,7 +83449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 466
   indentLevel: 0
-  storyText: ...
+  storyText: Sorry.
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -83280,7 +83649,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.46548
     y: 88.27024
-    width: 106.55168
+    width: 103.8775
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -85473,7 +85842,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.8515
     y: 146.2514
-    width: 109.3103
+    width: 107.14281
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -85954,34 +86323,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1781506306
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781505815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 619
-  indentLevel: 0
-  storyText: Reccomending wiping files from VR Module and returning power to essential
-    systems of Yggdrasil sub-colony.
-  description: 
-  character: {fileID: 2036096681}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1781506307
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -86023,7 +86364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 617
   indentLevel: 0
-  storyText: "Colony Altair: \r{wi}\nLife signs:7 "
+  storyText: "Colony Altair: \r{wi}\nLife signs: 8"
   description: 
   character: {fileID: 2036096681}
   portrait: {fileID: 0}
@@ -86131,7 +86472,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 613
   indentLevel: 0
-  storyText: "Colony oversight module: {wi}Online and Functional \r\n"
+  storyText: 'Colony oversight module: Functional
+
+'
   description: 
   character: {fileID: 2036096681}
   portrait: {fileID: 0}
@@ -86158,7 +86501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 612
   indentLevel: 0
-  storyText: 'Water & Air Purification systems: {wi}Offline. Please restore.'
+  storyText: 'Water & Air Purification systems: Functional'
   description: 
   character: {fileID: 2036096681}
   portrait: {fileID: 0}
@@ -86185,7 +86528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 611
   indentLevel: 0
-  storyText: 'Fluorescent systems:{wi} Offline. Please restore.
+  storyText: 'Fluorescent systems:{wi} Functional: Recently Cut
 
 '
   description: 
@@ -86214,7 +86557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 608
   indentLevel: 0
-  storyText: 'Reccomendations: {w}Rain Ambience {w} Ads from the past {w} Freecel'
+  storyText: 'Reccomendations:'
   description: 
   character: {fileID: 2036096681}
   portrait: {fileID: 0}
@@ -86927,7 +87270,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 87.1383
     y: 270.32635
-    width: 160.34476
+    width: 157.755
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -86943,6 +87286,9 @@ MonoBehaviour:
   - {fileID: 1781506316}
   - {fileID: 1781506301}
   - {fileID: 1781506315}
+  - {fileID: 1781506428}
+  - {fileID: 1781506429}
+  - {fileID: 1781506430}
   - {fileID: 1781506314}
   - {fileID: 1781506313}
   - {fileID: 1781506312}
@@ -86951,7 +87297,6 @@ MonoBehaviour:
   - {fileID: 1781506309}
   - {fileID: 1781506308}
   - {fileID: 1781506307}
-  - {fileID: 1781506306}
   - {fileID: 1781506305}
   - {fileID: 1781506300}
   - {fileID: 1781506304}
@@ -86982,7 +87327,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.20723
     y: 206.05267
-    width: 158.96544
+    width: 157.755
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -87358,7 +87703,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 469.0974
     y: 213.46448
-    width: 178.27577
+    width: 174.08151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -87700,7 +88045,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 146.939
     y: 140.95396
-    width: 91.37928
+    width: 89.18364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -88640,7 +88985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 712
   indentLevel: 0
-  storyText: 
+  storyText: And so,
   description: 
   character: {fileID: 2036096681}
   portrait: {fileID: 0}
@@ -88885,7 +89230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 703
   indentLevel: 0
-  storyText: Where is my corpse, mortal!?
+  storyText: '{i}{b}Where is my corpse, mortal!? {/b}{/i}'
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -88966,7 +89311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 700
   indentLevel: 0
-  storyText: I feel like I can feel feeling it? If that makes sense?
+  storyText: I feel like I can feel myself feeling it? If that makes sense?
   description: 
   character: {fileID: 1116781685}
   portrait: {fileID: 0}
@@ -89094,7 +89439,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 611.43787
     y: 151.42381
-    width: 80.3448
+    width: 79.387726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -89148,7 +89493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 676.2654
     y: 227.28581
-    width: 67.93102
+    width: 66.326515
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -89159,6 +89504,614 @@ MonoBehaviour:
   commandList:
   - {fileID: 1781506419}
   suppressAllAutoSelections: 0
+--- !u!114 &1781506421
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 732
+  indentLevel: 0
+  targetObject: {fileID: 509216177}
+  methodName: BunkerMusic
+  delay: 0
+--- !u!114 &1781506422
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 731
+  indentLevel: 0
+  targetObject: {fileID: 509216177}
+  methodName: BunkerMusic
+  delay: 0
+--- !u!114 &1781506423
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 730
+  indentLevel: 0
+  targetObject: {fileID: 509216177}
+  methodName: BunkerMusic
+  delay: 0
+--- !u!114 &1781506424
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 733
+  indentLevel: 0
+  targetObject: {fileID: 509216177}
+  methodName: VrMusic
+  delay: 0
+--- !u!114 &1781506425
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 739
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1116781685}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c147db69b5f9cd94e8837ebfd7e4069d, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 2136447852}
+  facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1781506426
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 738
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1116781685}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 083a1ad67764f554494833caa385ff97, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 2136447852}
+  facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1781506427
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 737
+  indentLevel: 0
+  storyText: It's not like that.
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506428
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 736
+  indentLevel: 0
+  storyText: Rain Ambience
+  description: 
+  character: {fileID: 2036096681}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506429
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 735
+  indentLevel: 0
+  storyText: 'Ads from the past '
+  description: 
+  character: {fileID: 2036096681}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506430
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 734
+  indentLevel: 0
+  storyText: Freecel
+  description: 
+  character: {fileID: 2036096681}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506431
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 742
+  indentLevel: 0
+  storyText: I guess I see what you mean
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506432
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 741
+  indentLevel: 0
+  storyText: Are you having doubts?
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 751
+  indentLevel: 0
+  storyText: However, since you understand our language and have deliberately traveled
+    either through impossibly harsh conditions or after an extraordinary lapse of
+    time to deliberately reach this bunker,
+  description: 
+  character: {fileID: 2036096681}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 750
+  indentLevel: 0
+  storyText: in this highly unforseen case, we consider it possible that it would
+    be in our best interest to surrender complete, uninhibited control of this model
+    to you.
+  description: 
+  character: {fileID: 2036096681}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 749
+  indentLevel: 0
+  storyText: Or almost everything.
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 748
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 747
+  indentLevel: 0
+  storyText: Fuckers thought of everything.
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 746
+  indentLevel: 0
+  storyText: And yet, as things no doubt stand, we can offer you nothing further.
+  description: 
+  character: {fileID: 2036096681}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 745
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 744
+  indentLevel: 0
+  storyText: So let's uh... go find out what the fuck that involves I guess.
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 743
+  indentLevel: 0
+  storyText: I'm guessing the {color=blue}Altair colony needs its lights back on{/color}
+    based on what the computer said.
+  description: 
+  character: {fileID: 1828864982}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1781506442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 755
+  indentLevel: 0
+  targetObject: {fileID: 1638327349}
+  methodName: Credits
+  delay: 0
+--- !u!114 &1781506443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 754
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 4
+  durationOLD: 0
+--- !u!114 &1781506444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 753
+  indentLevel: 0
+  targetObject: {fileID: 1638327349}
+  methodName: Credits
+  delay: 0
+--- !u!114 &1781506445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781505815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 752
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 4
+  durationOLD: 0
 --- !u!1 &1782202384
 GameObject:
   m_ObjectHideFlags: 0
@@ -91344,6 +92297,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fae1500c9cd745a429c5caef0135a78f, type: 3}
   m_PrefabInstance: {fileID: 236074796}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1860408863
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1982213789}
+    m_Modifications:
+    - target: {fileID: 816669259574667640, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0fad0fe9ff60ab9489fc8486d1ec749f, type: 3}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65280074
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.65280056
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6.5280056
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.220001
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.971467
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.23717494
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -27.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667641, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667642, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: m_Name
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 816669259574667643, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1695825907}
+    m_RemovedComponents:
+    - {fileID: 816669259574667643, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9b1462c5aaa9b6040b74d9a6910bb5e2, type: 3}
 --- !u!1 &1860762967
 GameObject:
   m_ObjectHideFlags: 0
@@ -96134,6 +97165,9 @@ Transform:
   - {fileID: 749248461}
   - {fileID: 2073505998}
   - {fileID: 730002146}
+  - {fileID: 783514212}
+  - {fileID: 1234783409}
+  - {fileID: 53392838}
   m_Father: {fileID: 1419775331}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

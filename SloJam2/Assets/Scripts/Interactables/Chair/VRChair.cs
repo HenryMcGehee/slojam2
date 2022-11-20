@@ -17,6 +17,7 @@ public class VRChair : MonoBehaviour
     bool playerInteracting;
     public Flowchart chart;
     public GameManager manager;
+    public MusicManager music;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +52,7 @@ public class VRChair : MonoBehaviour
                 // do ui shit
                 fade.Fade();
                 // sound shit
+                music.VrMusic();
             }
             else{
                 playerInteracting = true;

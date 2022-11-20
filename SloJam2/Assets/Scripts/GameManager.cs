@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Progression")]
@@ -100,5 +100,10 @@ public class GameManager : MonoBehaviour
             }
             chart.ExecuteBlock("Override");
         }
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(1);
     }
 }

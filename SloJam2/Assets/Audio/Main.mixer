@@ -82,6 +82,18 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!245 &-479684177760840746
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Vr
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 6b64606cf83f1424786007535419c497
+  m_FloatValues:
+    7d5a65d3a5c58944fb28d09c38ca52ac: -80
+  m_TransitionOverrides: {}
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -93,6 +105,8 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: 7526266254300869498}
+  - {fileID: -479684177760840746}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -147,10 +161,12 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: NoAudio
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 96176861cbc902540a7b686b86e627af
-  m_FloatValues: {}
+  m_FloatValues:
+    7d5a65d3a5c58944fb28d09c38ca52ac: -80
+    c5349cae6f0819b4cb4e59b056574bdf: -80
   m_TransitionOverrides: {}
 --- !u!243 &6179164318867316805
 AudioMixerGroupController:
@@ -171,3 +187,15 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!245 &7526266254300869498
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bunker
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: a2138246e06324249819c53b4a78cbd5
+  m_FloatValues:
+    c5349cae6f0819b4cb4e59b056574bdf: -80
+  m_TransitionOverrides: {}
