@@ -42,6 +42,7 @@ public class Bed : MonoBehaviour
                 // do ui shit
                 fade.Fade();
                 StartCoroutine("Sleep");
+                player.InVr();
                 // sound shit
             }
             else{

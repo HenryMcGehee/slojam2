@@ -37,11 +37,12 @@ public class VRChair : MonoBehaviour
     }
     public void Interact()
     {
-        if(levelDiagnostics.power > powerRequirement)
+        if(levelDiagnostics.power >= powerRequirement)
         {
             if(chairReady)
             {
-                screenAnim.Play("ScreenToVRWorld");
+                player.InVr();
+                //screenAnim.Play("ScreenToVRWorld");
                 levelDiagnostics.power -= powerRequirement;
                 // play animation
                 anim.SetTrigger("PullIn");

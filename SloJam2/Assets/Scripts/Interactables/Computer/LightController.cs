@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class LightController : MonoBehaviour
 {
@@ -10,8 +11,10 @@ public class LightController : MonoBehaviour
     public GameObject lights;
     public bool lightStatus;
     public bool lightOffOnStart;
+    public bool locked;
     public Color on;
     public Color off;
+    public Flowchart chart;
     void Start()
     {
         if(lightOffOnStart)
@@ -25,7 +28,14 @@ public class LightController : MonoBehaviour
             TurnOnLight();
         }
         else{
-            TurnOffLight();
+            if(!locked){
+                TurnOffLight();
+            }
+            else{
+                Debug.Log("Locked");
+                chart.ExecuteBlock("Locked");
+                // play sound
+            }
         }
     }
     void TurnOnLight(){

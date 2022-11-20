@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     public NutrientDispenser nutrientDispenser;
     public Fountain fountain;
     public Animator chairScreenAnim;
+    public List<ColonyController> controller;
+    public List<ColonyOxygenController> oxyController;
+    public List<LightController> lightController;
+    bool Overriden;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +29,7 @@ public class GameManager : MonoBehaviour
         {
             player.StartInVRWorld();
             chart.ExecuteBlock("1");
-            levelDiagnostics.power = 500;
+            levelDiagnostics.power = 150;
         }
         
     }
@@ -46,7 +50,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // Screen Update
-        if(levelDiagnostics.power > chair.powerRequirement)
+        if(levelDiagnostics.power >= chair.powerRequirement)
         {
             chairScreenAnim.SetBool("CanUse", true);
         }
@@ -54,6 +58,13 @@ public class GameManager : MonoBehaviour
             chairScreenAnim.SetBool("CanUse", false);
         }
 
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            if(!player.inVR)
+            {
+                Override();
+            }
+        }
 
         // if(Input.GetKeyDown(KeyCode.K))
         // {
@@ -66,5 +77,28 @@ public class GameManager : MonoBehaviour
     {
         nutrientDispenser.ration = false;
         fountain.ration = false;
+    }
+
+    public void Override()
+    {
+        if(!Overriden)
+        {
+            Overriden = true;
+            foreach (var item in controller)
+            {
+                item.locked = false;
+            }
+
+            foreach (var item in oxyController)
+            {
+                item.locked = false;
+            }
+
+            foreach (var item in lightController)
+            {
+                item.locked = false;
+            }
+            chart.ExecuteBlock("Override");
+        }
     }
 }

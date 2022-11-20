@@ -61,13 +61,15 @@ public class FPSController : MonoBehaviour
             float movementDirectionY = moveDirection.y;
             moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
+            moveDirection.y = movementDirectionY;
+            moveDirection.y -= gravity * Time.deltaTime;
+
             // if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
             // {
             //     moveDirection.y = jumpSpeed;
             // }
             // else
             // {
-            //     moveDirection.y = movementDirectionY;
             // }
 
             // // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
@@ -75,7 +77,6 @@ public class FPSController : MonoBehaviour
             // // as an acceleration (ms^-2)
             // if (!characterController.isGrounded)
             // {
-            //     moveDirection.y -= gravity * Time.deltaTime;
             // }
 
             // Move the controller

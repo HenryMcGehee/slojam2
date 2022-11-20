@@ -17,6 +17,7 @@ public class PlayerRayCast : MonoBehaviour
     public Vector3 TargetPos;
     public float inspectSpeed;
     public GameObject vrChair;
+    public bool inVR;
 
     void Start()
     {
@@ -116,6 +117,14 @@ public class PlayerRayCast : MonoBehaviour
     }
     void SetTalking(){
         talking = true;
+    }
+    public void InVr()
+    {
+        inVR = true;
+    }
+    public void NotInVr()
+    {
+        inVR = false;
     }
 
     IEnumerator delayTalkReset(){
